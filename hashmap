@@ -1,0 +1,23 @@
+my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.get('Dave'))
+
+
+
+
+
+RollNumbers={
+'Harry':526272,
+'Joe':648404,
+'Karol':374757,
+'Paul':285848,
+'Rachel':171819,
+'Simon':607080,
+'Tom':987868,
+'Jack':675747,
+'Amelia':503892,
+'Evelyn':213141
+}
+ 
+print(RollNumbers)
