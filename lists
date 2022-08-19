@@ -1,0 +1,84 @@
+#Creating lists
+my_list = ['foo', 4, 5, 'bar', 0.4]
+my_nested_list = ['foobar', ['baz', 'qux'], [0]]
+
+#Accessing list values
+my_list[2] # 5
+my_list[-1] # 0.4
+my_list[:2] # ['foo', 4, 5]
+my_nested_list[2] # ['baz', 'quz']
+my_nested_list[-1] # [0]
+my_nested_list[1][1] # 'qux'
+
+#Modifying lists
+my_list.append(x) # append x to end of list
+my_list.extend(iterable) # append all elements of iterable to list
+my_list.insert(i, x) # insert x at index i
+my_list.remove(x) # remove first occurance of x from list
+my_list.pop([i]) # pop element at index i (defaults to end of list)
+my_list.clear() # delete all elements from the list
+my_list.index(x[, start[, end]]) # return index of element x
+my_list.count(x) # return number of occurances of x in list
+my_list.reverse() # reverse elements of list in-place (no return)
+my_list.sort(key=None, reverse=False) # sort list in-place
+my_list.copy() # return a shallow copy of the list
+
+
+
+list = [1, 2, 3, 4, 5, 6, 7, 9, 10]
+
+print("Original list", list)
+
+list[4] = 99
+
+print("Updated 1", list)
+
+# del is to delete 
+
+del list[4]
+
+print("Updated 2", list)
+
+list.append(12)
+
+print("Updated 3", list)
+
+list.remove(3)
+
+print("Updated 4", list)
+
+list.pop()
+
+print("Updated 5", list)
+
+list.insert(0, 9)
+# first index is the index value where u wanna put and second is what the value is 
+
+print("Updated 6", list)
+
+list.insert(0, 99)
+
+print("Updated 7", list)
+
+# How to add a list into another list 
+
+second_list = [8, 9, 10]
+list[3] = second_list
+print("List after adding a new list into an exiting list", list)
+
+# How to find the mode
+
+print("Counting the number of appearances", list.count(9))
+
+
+lis = [1, 4, 6, 1, 5]
+print("Number 1 is in", lis.index(1))
+
+print("Get lenght of the list", len(list))
+
+list1 = [1, 2, 3, 4, 5, 6, 7]
+list2 = [8, 9, 10, 11, 12, 13, 14]
+
+print("Join two lists ", list1 + list2)
+
+print("Repeat the element in the list", "\nHello Sneh\n" *10)
