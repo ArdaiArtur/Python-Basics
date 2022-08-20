@@ -1,3 +1,9 @@
+
+string = 'string'
+integer = 5
+boolean = True
+
+
 for i in range(1,10,2): #(initial,final but not included,gap)
   print(i); 
   #output: 1,3,5,7,9
